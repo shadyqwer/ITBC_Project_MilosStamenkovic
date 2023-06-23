@@ -61,7 +61,7 @@ public class BaseTest {
     }
 
     public SoftAssert getSoftAssert() {
-        return softAssert;
+        return this.softAssert;
     }
 
     public Actions getActions() {
@@ -73,7 +73,7 @@ public class BaseTest {
     }
 
     public Faker getFaker() {
-        return faker;
+        return this.faker;
     }
 
     public BasePage getBasePage() {
@@ -89,31 +89,31 @@ public class BaseTest {
     }
 
     public ButtonsPage getButtonsPage() {
-        return buttonsPage;
+        return this.buttonsPage;
     }
 
     public LinksPage getLinksPage() {
-        return linksPage;
+        return this.linksPage;
     }
 
     public TextBoxPage getTextBoxPage() {
-        return textBoxPage;
+        return this.textBoxPage;
     }
 
     public RadioButtonPage getRadioButtonPage() {
-        return radioButtonPage;
+        return this.radioButtonPage;
     }
 
     public CheckBoxPage getCheckBoxPage() {
-        return checkBoxPage;
+        return this.checkBoxPage;
     }
 
     public BrokenLinksAndImagesPage getBrokenLinksAndImagesPage() {
-        return brokenLinksAndImagesPage;
+        return this.brokenLinksAndImagesPage;
     }
 
     public DynamicPropertiesPage getDynamicPropertiesPage() {
-        return dynamicPropertiesPage;
+        return this.dynamicPropertiesPage;
     }
 
     public AlertsFrameWindowsPage getAlertsFrameWindowsPage() {
@@ -129,15 +129,15 @@ public class BaseTest {
     }
 
     public WidgetsPage getWidgetsPage() {
-        return widgetsPage;
+        return this.widgetsPage;
     }
 
     public TabsPage getTabsPage() {
-        return tabsPage;
+        return this.tabsPage;
     }
 
     public ToolTipsPage getToolTipsPage() {
-        return toolTipsPage;
+        return this.toolTipsPage;
     }
 
     public AlertsPage getAlertsPage() {
@@ -149,31 +149,31 @@ public class BaseTest {
     }
 
     public InteractionsPage getInteractionsPage() {
-        return interactionsPage;
+        return this.interactionsPage;
     }
 
     public SelectablePage getSelectablePage() {
-        return selectablePage;
+        return this.selectablePage;
     }
 
     public DroppablePage getDroppablePage() {
-        return droppablePage;
+        return this.droppablePage;
     }
 
     public DragabblePage getDragabblePage() {
-        return dragabblePage;
+        return this.dragabblePage;
     }
 
     public SliderPage getSliderPage() {
-        return sliderPage;
+        return this.sliderPage;
     }
 
     public SelectMenuPage getSelectMenuPage() {
-        return selectMenuPage;
+        return this.selectMenuPage;
     }
 
     public ProgressBarPage getProgressBarPage() {
-        return progressBarPage;
+        return this.progressBarPage;
     }
 
     @BeforeClass
