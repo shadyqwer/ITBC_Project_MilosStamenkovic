@@ -22,6 +22,7 @@ Features automated so far:
 * Accordion
 * Progress Bar
 * Tabs
+* Slider
 * Tool Tips
 * Select Menu
 * Selectable
