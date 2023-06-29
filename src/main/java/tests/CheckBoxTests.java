@@ -24,10 +24,13 @@ public class CheckBoxTests extends BaseTest {
     @Test(dataProvider = "allCheckBoxes", dataProviderClass = TestDataProviders.class)
     public void verifyAllCheckBoxes(ArrayList<String> checkBoxes) {
         getCheckBoxPage().expandAll();
+
         for (String box : checkBoxes) {
             getCheckBoxPage().checkBox(box);
             getSoftAssert().assertTrue(getCheckBoxPage().getCheckBoxInput(box).isSelected());
+
             getCheckBoxPage().checkBox(box);
+            getSoftAssert().assertFalse(getCheckBoxPage().getCheckBoxInput(box).isSelected());
         }
         getSoftAssert().assertAll();
     }
