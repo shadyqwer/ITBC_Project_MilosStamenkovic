@@ -2,6 +2,10 @@ package data;
 
 import org.testng.annotations.DataProvider;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class TestDataProviders {
     @DataProvider(name = "invalidEmails")
     public static Object[][] invalidEmails() {
@@ -18,6 +22,17 @@ public class TestDataProviders {
                 {"Veu"}, {"Office"}, {"Public"}, {"Private"}, {"Classified"}, {"General"}, {"Downloads"}, {"Word"},
                 {"Excel"}
         };
+    }
+
+    @DataProvider(name = "allCheckBoxes")
+    public static Object[][] allCheckBoxes() {
+        List<String> elements = Arrays.asList(
+                "Home", "Desktop", "Notes", "Commands", "Documents", "WorkSpace",
+                "React", "Angular", "Veu", "Office", "Public", "Private", "Classified",
+                "General", "Downloads", "Word", "Excel"
+        );
+
+        return new Object[][]{{new ArrayList<>(elements)}};
     }
 
     @DataProvider(name = "selectableList")
