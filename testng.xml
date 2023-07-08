@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Parallel Test Suite" parallel="classes" thread-count="2">
+<suite name="DEMOQA Suite" parallel="classes" thread-count="2">
 
-    <test name="Parallel tests">
+    <test name="DEMOQA tests">
         <parameter name="browser" value="chrome" />
         <classes>
             <class name="tests.AccordianTests"/>
