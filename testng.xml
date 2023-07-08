@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parallel Test Suite" parallel="classes" thread-count="2">
+
+    <test name="Parallel tests">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="tests.AccordianTests"/>
+            <class name="tests.AlertsFrameWindowsTests"/>
+            <class name="tests.AlertsTests"/>
+            <class name="tests.BrokenLinksAndImagesTests"/>
+            <class name="tests.ButtonsTests"/>
+            <class name="tests.CheckBoxTests"/>
+            <class name="tests.DragabbleTests"/>
+            <class name="tests.DroppableTests"/>
+            <class name="tests.DynamicPropertiesTests"/>
+            <class name="tests.ElementsTests"/>
+            <class name="tests.FramesTests"/>
+            <class name="tests.IndexTests"/>
+            <class name="tests.LinksTests"/>
+            <class name="tests.ModalDialogsTests"/>
+            <class name="tests.ProgressBarTests"/>
+            <class name="tests.RadioButtonTests"/>
+            <class name="tests.SelectableTests"/>
+            <class name="tests.SelectMenuTests"/>
+            <class name="tests.SliderTest"/>
+            <class name="tests.TabsTests"/>
+            <class name="tests.TextBoxTests"/>
+            <class name="tests.ToolTipsTests"/>
+            <class name="tests.WidgetsTests"/>
+        </classes>
+    </test>
+
+    <!-- Test -->
+</suite> <!-- Suite -->

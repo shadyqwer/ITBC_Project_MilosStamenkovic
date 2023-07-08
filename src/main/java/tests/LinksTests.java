@@ -32,35 +32,35 @@ public class LinksTests extends BaseTest {
     @Test
     public void verifyCreatedApiCall() {
         getLinksPage().getCreatedLink().click();
-        Assert.assertTrue(getLinksPage().responseFieldText().contains("201 ") &&
+        Assert.assertTrue(getLinksPage().responseFieldText().contains("201") &&
                 getLinksPage().responseFieldText().contains("Created"));
     }
 
     @Test
     public void verifyNoContentApiCall() {
         getLinksPage().getNoContentLink().click();
-        Assert.assertTrue(getLinksPage().responseFieldText().contains("204 ") &&
+        Assert.assertTrue(getLinksPage().responseFieldText().contains("204") &&
                 getLinksPage().responseFieldText().contains("No Content"));
     }
 
     @Test
     public void verifyMovedApiCall() {
         getLinksPage().getMovedLink().click();
-        Assert.assertTrue(getLinksPage().responseFieldText().contains("301 ") &&
+        Assert.assertTrue(getLinksPage().responseFieldText().contains("301") &&
                 getLinksPage().responseFieldText().contains("Moved Permanently"));
     }
 
     @Test
     public void verifyBadRequestApiCall() {
         getLinksPage().getBadRequestLink().click();
-        Assert.assertTrue(getLinksPage().responseFieldText().contains("400 ") &&
+        Assert.assertTrue(getLinksPage().responseFieldText().contains("400") &&
                 getLinksPage().responseFieldText().contains("Bad Request"));
     }
 
     @Test
     public void verifyUnauthorizedApiCall() {
         getLinksPage().getUnauthorizedLink().click();
-        Assert.assertTrue(getLinksPage().responseFieldText().contains("401 ") &&
+        Assert.assertTrue(getLinksPage().responseFieldText().contains("401") &&
                 getLinksPage().responseFieldText().contains("Unauthorized"));
     }
 
