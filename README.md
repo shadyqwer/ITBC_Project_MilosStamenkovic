@@ -6,6 +6,7 @@ The project focuses on testing the website [demoqa.com](https://demoqa.com/) usi
 * Testing Framework: TestNG
 * Programming Language: Java
 * Automation Library: Selenium WebDriver
+* Driver management tool: WebDriverManager
 
 The project involves writing manual tests for all the features on the site and automating as many of them as possible. It also includes finding bugs and making improvements. Additionally, API testing for the same website is performed using Postman.
 
