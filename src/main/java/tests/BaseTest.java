@@ -2,11 +2,9 @@ package tests;
 
 import com.github.javafaker.Faker;
 import data.DriverManager;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -54,6 +52,8 @@ public class BaseTest {
     private SliderPage sliderPage;
     private SelectMenuPage selectMenuPage;
     private ProgressBarPage progressBarPage;
+    private FormsPage formsPage;
+    private PracticeFormPage practiceFormPage;
 
 
     public WebDriver getDriver() {
@@ -180,6 +180,14 @@ public class BaseTest {
         return this.progressBarPage;
     }
 
+    public FormsPage getFormsPage() {
+        return this.formsPage;
+    }
+
+    public PracticeFormPage getPracticeFormPage() {
+        return this.practiceFormPage;
+    }
+
     @BeforeClass
     @Parameters("browser")
     public void setUp(@Optional("chrome") String browser) {
@@ -214,6 +222,8 @@ public class BaseTest {
         sliderPage = new SliderPage(driver, wait);
         selectMenuPage = new SelectMenuPage(driver, wait);
         progressBarPage = new ProgressBarPage(driver, wait);
+        formsPage = new FormsPage(driver, wait);
+        practiceFormPage = new PracticeFormPage(driver, wait);
 
         getDriver().manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
