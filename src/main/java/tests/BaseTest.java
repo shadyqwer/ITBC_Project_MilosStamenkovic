@@ -231,11 +231,7 @@ public class BaseTest {
 
     @AfterClass
     public void cleanUp() {
-        List<String> allOpenedTabs = new ArrayList<>(getDriver().getWindowHandles());
-        for (String tab : allOpenedTabs) {
-            getDriver().switchTo().window(tab);
-            getDriver().close();
-        }
+        driver.quit();
     }
 
     public void assertVisibilityOfElement(WebElement element) {
